@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuitKeep – Politique de confidentialité</title>
+<style>
+  :root { --bg:#0c1410; --card:#142019; --ink:#eaf3ee; --muted:#9fb3a8; --accent:#34b878; --accent2:#1a8050; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  header { text-align:center; padding:40px 0 16px; }
+  .logo { width:88px; height:88px; border-radius:22px; display:inline-flex; align-items:center; justify-content:center;
+          background:linear-gradient(135deg,var(--accent2),var(--accent)); font-size:48px; }
+  h1 { margin:16px 0 4px; font-size:32px; }
+  .tag { color:var(--muted); margin:0 0 8px; }
+  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid #24332b; padding-bottom:8px; }
+  a { color:var(--accent); }
+  .card { background:var(--card); border:1px solid #20302a; border-radius:16px; padding:20px 22px; margin-top:18px; }
+  .muted { color:var(--muted); font-size:14px; }
+  ul { padding-left:20px; }
+  code { background:#0f1a15; padding:2px 6px; border-radius:6px; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🌿</div>
+    <h1>QuitKeep</h1>
+    <p class="tag">Un compagnon privé pour arrêter. Un jour à la fois.</p>
+  </header>
+
+  <p>QuitKeep t’aide à arrêter la vape, la cigarette, l’alcool et d’autres habitudes : il compte tes jours, l’argent économisé et la récupération de ton corps, avec un SOS pour les moments difficiles. Tout reste sur ton iPhone : pas de compte, pas de publicité, pas d’abonnement.</p>
+
+  <h2 id="privacy">Politique de confidentialité</h2>
+  <div class="card">
+    <p class="muted">Mise à jour : 1er octobre 2026</p>
+    <p><strong>QuitKeep ne collecte, ne transmet, ne vend et ne partage aucune de tes données.</strong> Il n’y a ni compte, ni identifiant, ni serveur.</p>
+    <p><strong>Ce que nous collectons :</strong> rien. L’app ne contient aucun outil d’analyse, aucune publicité et aucun SDK tiers, et n’établit aucune connexion réseau. Comme il n’existe aucun serveur, tes données ne peuvent techniquement pas nous parvenir.</p>
+    <p><strong>Où se trouvent tes données :</strong> uniquement sur ton iPhone, dans la base de données locale d’Apple. Si tu supprimes l’app, les données disparaissent avec elle. L’export CSV/PDF intégré te permet d’en garder une copie à tout moment.</p>
+    <p><strong>Notifications :</strong> si tu actives les rappels, ils sont programmés localement sur ton appareil et ne passent par aucun serveur.</p>
+    <p><strong>Face ID et le verrouillage de l’app :</strong> QuitKeep ne collecte, ne lit, ne stocke et ne partage aucune donnée faciale. Le verrouillage optionnel (dans les réglages de QuitKeep, désactivé par défaut) utilise le framework LocalAuthentication d’Apple : iOS vérifie lui-même Face ID, Touch ID ou le code, et indique seulement à QuitKeep si la vérification a réussi. Tes données faciales restent dans la Secure Enclave de ton appareil, sous le contrôle d’Apple ; QuitKeep ne les reçoit jamais et ne peut donc ni les utiliser, ni les conserver, ni les divulguer, ni les transmettre à des tiers. Pour retirer ton autorisation, désactive le verrouillage dans les réglages de QuitKeep, ou désactive Face ID pour QuitKeep dans les Réglages d’iOS (Face ID et code › Autres apps). QuitKeep ne détenant aucune donnée faciale, il n’y a rien à supprimer ; ton visage enregistré se gère et se supprime uniquement dans les Réglages d’iOS › Face ID et code.</p>
+    <p><strong>Lignes d’écoute :</strong> les numéros d’aide et de crise listés dans l’app sont des services tiers. Un appel te met directement en relation avec eux, sans passer par QuitKeep.</p>
+    <p><strong>Achat intégré :</strong> QuitKeep Plus est un achat unique et optionnel, entièrement géré par l’App Store d’Apple. QuitKeep ne reçoit aucune donnée de paiement ; la politique de confidentialité d’Apple s’applique à la transaction.</p>
+    <p><strong>Enfants :</strong> QuitKeep ne collecte sciemment de données auprès de personne, enfants compris.</p>
+    <p><strong>Responsable et contact :</strong> Nick Minieri, <a href="mailto:minieriapps+quitkeep@gmail.com">minieriapps+quitkeep@gmail.com</a></p>
+    <p><strong>Tes droits :</strong> QuitKeep ne traitant aucune donnée personnelle, il n’existe chez nous rien à quoi appliquer un droit d’accès, de rectification ou d’effacement. Toutes les données sont entre tes mains, sur ton appareil.</p>
+    <p class="muted">English: <a href="index.html#privacy">Privacy Policy</a> · Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
+  </div>
+
+  <p class="muted" style="margin-top:24px">QuitKeep est un outil de suivi personnel. Ce n’est pas un dispositif médical et il ne fournit ni conseil médical, ni diagnostic, ni traitement. Si tu bois beaucoup ou tous les jours, parle à un médecin avant d’arrêter : le sevrage alcoolique peut être dangereux.</p>
+
+  <footer>© 2026 Nick Minieri · QuitKeep</footer>
+</div>
+</body>
+</html>
