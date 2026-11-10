@@ -1,9 +1,44 @@
+---
+title: "QuitKeep: a private quit and sobriety tracker for iPhone"
+description: "QuitKeep is a free, private iPhone app for quitting vaping, smoking, nicotine pouches or alcohol. No account, no ads, no data collected."
+image: /icon.png
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QuitKeep — Private quit & sobriety tracker</title>
+<meta name="apple-itunes-app" content="app-id=6784056917">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "QuitKeep",
+  "alternateName": "QuitKeep: Quit Vaping & Habits",
+  "description": "A private quit and sobriety tracker for iPhone: a daily pledge, a tree that grows with your streak, money kept, a sourced recovery timeline, and an SOS for cravings. No account, no ads, no data collected.",
+  "url": "https://nickminieri.github.io/quitkeep/",
+  "installUrl": "https://apps.apple.com/app/id6784056917",
+  "image": "https://nickminieri.github.io/quitkeep/icon.png",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": ["en", "de", "fr"],
+  "fileSize": "9.6 MB",
+  "contentRating": "17+",
+  "datePublished": "2026-07-01",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download and use. Optional QuitKeep Plus: $29.99 a year after a free week, or $79.99 once."
+  },
+  "author": { "@type": "Person", "name": "Nick Minieri" },
+  "sameAs": "https://apps.apple.com/app/id6784056917"
+}
+</script>
 <style>
   :root { --bg:#0c1410; --card:#142019; --ink:#eaf3ee; --muted:#9fb3a8; --accent:#34b878; --accent2:#1a8050; }
   * { box-sizing:border-box; }
@@ -22,6 +57,10 @@
   ul { padding-left:20px; }
   code { background:#0f1a15; padding:2px 6px; border-radius:6px; }
   footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
+  .facts { display:grid; grid-template-columns:minmax(120px,34%) 1fr; gap:0; margin:0; }
+  .facts dt, .facts dd { margin:0; padding:9px 0; border-bottom:1px solid #20302a; }
+  .facts dt { color:var(--muted); padding-right:14px; }
+  .facts dt:last-of-type, .facts dd:last-of-type { border-bottom:0; }
 </style>
 </head>
 <body>
@@ -37,12 +76,37 @@
   <h2 id="about">About QuitKeep</h2>
   <div class="card">
     <p><strong>What it is:</strong> A companion for quitting vaping, smoking, nicotine pouches, alcohol, or any habit: a daily pledge, a tree that grows with your streak, money kept, a sourced timeline of what changes in your body, and an SOS for cravings.</p>
-    <p><strong>Who it is for:</strong> Anyone quitting nicotine, alcohol, or another habit, on their own or alongside a program.</p>
-    <p><strong>Price:</strong> Free. Plus is optional: $29.99 a year after a free week, or $79.99 once. No ads.</p>
-    <p><strong>Privacy:</strong> No account, no analytics, no data collected. Everything stays on your iPhone. Works offline.</p>
-    <p><strong>Platform and languages:</strong> iPhone (iOS 17 or later), optimized for iPhone Duo. English, German and French.</p>
+    <p><strong>Who it is for:</strong> QuitKeep is for anyone quitting nicotine, alcohol, or another habit, on their own or alongside a program.</p>
     <p><strong>On iPhone Duo:</strong> open it wide and the page splits at the hinge, your day on the left and your path on the right. Progress and Journal open the same way. Fold it and everything stays where it was.</p>
-    <p><strong>Made by:</strong> Nick Minieri, one person in the United States. <a href="https://apps.apple.com/app/id6784056917">App Store listing</a>.</p>
+  </div>
+
+  <h2 id="facts">QuitKeep at a glance</h2>
+  <div class="card">
+    <dl class="facts">
+      <dt>App Store name</dt><dd>QuitKeep: Quit Vaping &amp; Habits</dd>
+      <dt>Price</dt><dd>Free. Plus is optional: $29.99 a year after a free week, or $79.99 once (US prices).</dd>
+      <dt>Ads</dt><dd>None</dd>
+      <dt>Account</dt><dd>None. There is no sign-up and no server.</dd>
+      <dt>App Store privacy label</dt><dd>Data Not Collected</dd>
+      <dt>Works offline</dt><dd>Yes</dd>
+      <dt>Size</dt><dd>9.6 MB</dd>
+      <dt>Requires</dt><dd>iPhone with iOS 17.0 or later. Optimized for iPhone Duo.</dd>
+      <dt>Languages</dt><dd>English, German, French</dd>
+      <dt>Category</dt><dd>Health &amp; Fitness</dd>
+      <dt>Age rating</dt><dd>17+</dd>
+      <dt>First released</dt><dd>July 1, 2026</dd>
+      <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+      <dt>Download</dt><dd><a href="https://apps.apple.com/app/id6784056917">QuitKeep on the App Store</a></dd>
+    </dl>
+    <p class="muted">Checked against the App Store listing on November 10, 2026.</p>
+  </div>
+
+  <h2 id="research">The research behind it</h2>
+  <div class="card">
+    <p><strong>If-then plans.</strong> A 2019 meta-analysis of 12 studies found that smokers who made if-then plans quit more often than those who did not: 10.7% against 4.9% on average (<a href="https://doi.org/10.1037/hea0000768">McWilliams and colleagues, Health Psychology, 2019</a>). In QuitKeep you write your own if-then plans, and the app shows them the moment they apply.</p>
+    <p><strong>Riding out a craving.</strong> In a randomized study of 123 student smokers, a short "urge surfing" instruction did not make the urges weaker, but that group smoked fewer cigarettes over the next seven days (<a href="https://doi.org/10.1037/a0017127">Bowen and Marlatt, Psychology of Addictive Behaviors, 2009</a>). QuitKeep's 15-minute "ride the wave" timer asks how strong the craving is at the start and at the end, so you see your own numbers.</p>
+    <p><strong>What changes in your body.</strong> Every milestone in the recovery timeline for smoking, vaping, pouches and alcohol names its source, such as the NHS, the CDC or the American Cancer Society.</p>
+    <p class="muted">These studies tested the techniques, not QuitKeep. QuitKeep is a personal tracker, not a treatment.</p>
   </div>
 
   <h2 id="support">Support</h2>
