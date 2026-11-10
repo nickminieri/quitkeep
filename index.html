@@ -9,8 +9,10 @@ lang: en
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QuitKeep — Private quit & sobriety tracker</title>
+<title>QuitKeep: a private quit and sobriety tracker for iPhone</title>
 <meta name="apple-itunes-app" content="app-id=6784056917">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
 {% seo title=false %}
 <script type="application/ld+json">
 {
@@ -39,110 +41,103 @@ lang: en
   "sameAs": "https://apps.apple.com/app/id6784056917"
 }
 </script>
-<style>
-  :root { --bg:#0c1410; --card:#142019; --ink:#eaf3ee; --muted:#9fb3a8; --accent:#34b878; --accent2:#1a8050; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         background:var(--bg); color:var(--ink); line-height:1.6; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  header { text-align:center; padding:40px 0 16px; }
-  .logo { width:88px; height:88px; border-radius:22px; display:inline-flex; align-items:center; justify-content:center;
-          background:linear-gradient(135deg,var(--accent2),var(--accent)); font-size:48px; }
-  h1 { margin:16px 0 4px; font-size:32px; }
-  .tag { color:var(--muted); margin:0 0 8px; }
-  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid #24332b; padding-bottom:8px; }
-  a { color:var(--accent); }
-  .card { background:var(--card); border:1px solid #20302a; border-radius:16px; padding:20px 22px; margin-top:18px; }
-  .muted { color:var(--muted); font-size:14px; }
-  ul { padding-left:20px; }
-  code { background:#0f1a15; padding:2px 6px; border-radius:6px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
-  .facts { display:grid; grid-template-columns:minmax(120px,34%) 1fr; gap:0; margin:0; }
-  .facts dt, .facts dd { margin:0; padding:9px 0; border-bottom:1px solid #20302a; }
-  .facts dt { color:var(--muted); padding-right:14px; }
-  .facts dt:last-of-type, .facts dd:last-of-type { border-bottom:0; }
-</style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo">🌿</div>
-    <h1>QuitKeep</h1>
-    <p class="tag">A private quit &amp; sobriety tracker. One day at a time.</p>
-  </header>
-
-  <p>QuitKeep helps you quit alcohol, vaping, smoking, and more — tracking your streak, money saved, and health recovery, with a craving SOS for the hard moments. Everything stays on your iPhone: no account, no ads. Free to use, with an optional Plus upgrade.</p>
-
-  <h2 id="about">About QuitKeep</h2>
-  <div class="card">
-    <p><strong>What it is:</strong> A companion for quitting vaping, smoking, nicotine pouches, alcohol, or any habit: a daily pledge, a tree that grows with your streak, money kept, a sourced timeline of what changes in your body, and an SOS for cravings.</p>
-    <p><strong>Who it is for:</strong> QuitKeep is for anyone quitting nicotine, alcohol, or another habit, on their own or alongside a program.</p>
-    <p><strong>On iPhone Duo:</strong> open it wide and the page splits at the hinge, your day on the left and your path on the right. Progress and Journal open the same way. Fold it and everything stays where it was.</p>
+<div class="sky">
+  <div class="hero">
+    <div>
+      <a class="brand" href="./"><img src="icon.png" alt="QuitKeep app icon" width="44" height="44">QuitKeep</a>
+      <h1>Quit.<br>Watch it grow.</h1>
+      <p class="sub">One tree, grown from your own days.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6784056917"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
+      <p class="small">Free. No account. No ads.</p>
+    </div>
+    <img class="phone" src="img/today.webp" alt="QuitKeep on day 42 without alcohol: the counter, the tree, today's pledge and the money kept" width="720" height="1469">
   </div>
+</div>
 
-  <h2 id="facts">QuitKeep at a glance</h2>
-  <div class="card">
-    <dl class="facts">
-      <dt>App Store name</dt><dd>QuitKeep: Quit Vaping &amp; Habits</dd>
-      <dt>Price</dt><dd>Free. Plus is optional: $29.99 a year after a free week, or $79.99 once (US prices).</dd>
-      <dt>Ads</dt><dd>None</dd>
-      <dt>Account</dt><dd>None. There is no sign-up and no server.</dd>
-      <dt>App Store privacy label</dt><dd>Data Not Collected</dd>
-      <dt>Works offline</dt><dd>Yes</dd>
-      <dt>Size</dt><dd>9.6 MB</dd>
-      <dt>Requires</dt><dd>iPhone with iOS 17.0 or later. Optimized for iPhone Duo.</dd>
-      <dt>Languages</dt><dd>English, German, French</dd>
-      <dt>Category</dt><dd>Health &amp; Fitness</dd>
-      <dt>Age rating</dt><dd>17+</dd>
-      <dt>First released</dt><dd>July 1, 2026</dd>
-      <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
-      <dt>Download</dt><dd><a href="https://apps.apple.com/app/id6784056917">QuitKeep on the App Store</a></dd>
-    </dl>
-    <p class="muted">Checked against the App Store listing on November 10, 2026.</p>
-  </div>
+<main>
+  <p class="lede" id="about">QuitKeep is an iPhone app for quitting vaping, smoking, nicotine pouches, alcohol, or any other habit. You pledge each morning, and a tree grows with every day you win.</p>
+  <p>It counts your days and the money you have kept, shows what is changing in your body, and gives you something to do the minute a craving hits. Everything stays on your iPhone. There is no account and no server, so nothing you write ever leaves your phone.</p>
+</main>
+
+<div class="three">
+  <figure>
+    <img src="img/sos.webp" alt="The craving screen: This craving will pass, with a guide to ride it out" width="720" height="1469" loading="lazy">
+    <h3 class="big">Help in the hard minutes</h3>
+    <p>Breathe, move, ride the wave. Your gum first.</p>
+  </figure>
+  <figure>
+    <img src="img/slip.webp" alt="After a slip: your record is still there, 60 days in total and a longest streak of 42" width="720" height="1469" loading="lazy">
+    <h3 class="big">A slip is a chapter, not the end</h3>
+    <p>Your days are never erased.</p>
+  </figure>
+  <figure>
+    <img src="img/detail.webp" alt="One quit in detail: money kept, days won and the savings jar" width="720" height="1469" loading="lazy">
+    <h3 class="big">See what you keep</h3>
+    <p>Money kept, days won, your whole record. On your iPhone only.</p>
+  </figure>
+</div>
+
+<main>
+  <h2 id="facts">The details</h2>
+  <dl class="facts">
+    <dt>Price</dt><dd>Free. Plus is optional: $29.99 a year after a free week, or $79.99 once (US prices).</dd>
+    <dt>Ads</dt><dd>None</dd>
+    <dt>Account</dt><dd>None. No sign-up, no server.</dd>
+    <dt>Privacy label</dt><dd>Data Not Collected</dd>
+    <dt>Works offline</dt><dd>Yes</dd>
+    <dt>Needs</dt><dd>An iPhone with iOS 17.0 or later. Optimized for iPhone Duo.</dd>
+    <dt>Size</dt><dd>9.6 MB</dd>
+    <dt>Languages</dt><dd>English, German, French</dd>
+    <dt>Category</dt><dd>Health &amp; Fitness</dd>
+    <dt>Age rating</dt><dd>17+</dd>
+    <dt>First released</dt><dd>July 1, 2026</dd>
+    <dt>On the App Store as</dt><dd><a href="https://apps.apple.com/app/id6784056917">QuitKeep: Quit Vaping &amp; Habits</a></dd>
+    <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+  </dl>
+  <p class="soft" style="margin-top:12px">Checked against the App Store listing on November 10, 2026.</p>
 
   <h2 id="research">The research behind it</h2>
-  <div class="card">
-    <p><strong>If-then plans.</strong> A 2019 meta-analysis of 12 studies found that smokers who made if-then plans quit more often than those who did not: 10.7% against 4.9% on average (<a href="https://doi.org/10.1037/hea0000768">McWilliams and colleagues, Health Psychology, 2019</a>). In QuitKeep you write your own if-then plans, and the app shows them the moment they apply.</p>
-    <p><strong>Riding out a craving.</strong> In a randomized study of 123 student smokers, a short "urge surfing" instruction did not make the urges weaker, but that group smoked fewer cigarettes over the next seven days (<a href="https://doi.org/10.1037/a0017127">Bowen and Marlatt, Psychology of Addictive Behaviors, 2009</a>). QuitKeep's 15-minute "ride the wave" timer asks how strong the craving is at the start and at the end, so you see your own numbers.</p>
-    <p><strong>What changes in your body.</strong> Every milestone in the recovery timeline for smoking, vaping, pouches and alcohol names its source, such as the NHS, the CDC or the American Cancer Society.</p>
-    <p class="muted">These studies tested the techniques, not QuitKeep. QuitKeep is a personal tracker, not a treatment.</p>
-  </div>
+  <p>The if-then plans come from research on smokers. A 2019 review of 12 studies found that people who made a plan of the form "if this happens, I will do that" quit more often than people who did not: 10.7% against 4.9% on average (<a href="https://doi.org/10.1037/hea0000768">McWilliams and colleagues, Health Psychology</a>). In QuitKeep you write your own, and the app shows each one the moment it applies.</p>
+  <p>The 15-minute timer is built on urge surfing. In a 2009 study of 123 student smokers, a short lesson in it did not make the urges weaker, but the students who got it smoked fewer cigarettes over the next week (<a href="https://doi.org/10.1037/a0017127">Bowen and Marlatt, Psychology of Addictive Behaviors</a>). So the timer asks how strong the craving is at the start and again at the end, and you see your own numbers.</p>
+  <p>Each milestone in the recovery timeline names where it comes from: the NHS, the CDC, the American Cancer Society and others.</p>
+  <p class="soft">These studies tested the techniques, not QuitKeep. QuitKeep is a tracker, not a treatment.</p>
 
   <h2 id="support">Support</h2>
-  <div class="card">
-    <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
-    <p>Email: <a href="mailto:minieriapps+quitkeep@gmail.com">minieriapps+quitkeep@gmail.com</a></p>
-    <p class="muted">I'm a solo developer and read every message. Please allow a couple of days for a reply.</p>
-  </div>
-  <div class="card">
-    <strong>If you're in crisis</strong>
-    <ul>
-      <li><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988 (US)</li>
-      <li><strong>SAMHSA National Helpline</strong> — 1-800-662-HELP (4357)</li>
-      <li><strong>National Problem Gambling Helpline</strong> — 1-800-GAMBLER</li>
-    </ul>
-    <p class="muted">QuitKeep is a personal tracker, not a medical or crisis service.</p>
-  </div>
+  <p>Found a bug, or want something added? Email me at <a href="mailto:minieriapps+quitkeep@gmail.com">minieriapps+quitkeep@gmail.com</a>. I make QuitKeep on my own and read every message. Give me a couple of days to reply.</p>
+  <h3>If you're in crisis</h3>
+  <ul class="lines">
+    <li>988 Suicide &amp; Crisis Lifeline: call or text 988 (US)</li>
+    <li>SAMHSA National Helpline: 1-800-662-HELP (4357)</li>
+    <li>National Problem Gambling Helpline: 1-800-GAMBLER</li>
+  </ul>
+  <p class="soft">QuitKeep is a personal tracker, not a medical or crisis service.</p>
 
   <h2 id="privacy">Privacy Policy</h2>
-  <div class="card">
-    <p class="muted">Last updated: October 1, 2026</p>
-    <p><strong>QuitKeep does not collect, transmit, sell, or share any of your data.</strong> There is no account, no login, and no server.</p>
-    <p><strong>What we collect:</strong> Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
-    <p><strong>Where your data lives:</strong> Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in CSV/PDF export to keep your own copy.</p>
-    <p><strong>Notifications:</strong> If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
-    <p><strong>Face ID and the app lock:</strong> QuitKeep does not collect, access, store, or share face data. The optional app lock (in QuitKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells QuitKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; QuitKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in QuitKeep's Settings, or switch off Face ID for QuitKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because QuitKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
-    <p><strong>Get Help resources:</strong> The in-app crisis lines are third-party services listed for convenience; calling connects you directly to them, not through QuitKeep.</p>
-    <p><strong>In-app purchase:</strong> QuitKeep Plus is an optional purchase (a yearly subscription or a one-time unlock) handled entirely by Apple's App Store. QuitKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
-    <p><strong>Children:</strong> QuitKeep does not knowingly collect information from anyone, including children.</p>
-    <p class="muted">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a> · Français : <a href="confidentialite.html">Politique de confidentialité</a></p>
-    <p><strong>Contact:</strong> <a href="mailto:minieriapps+quitkeep@gmail.com">minieriapps+quitkeep@gmail.com</a></p>
-  </div>
+  <p class="soft">Last updated: October 1, 2026</p>
+  <p>QuitKeep does not collect, transmit, sell, or share any of your data. There is no account, no login, and no server.</p>
+  <h3>What we collect</h3>
+  <p>Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
+  <h3>Where your data lives</h3>
+  <p>Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in CSV/PDF export to keep your own copy.</p>
+  <h3>Notifications</h3>
+  <p>If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
+  <h3>Face ID and the app lock</h3>
+  <p>QuitKeep does not collect, access, store, or share face data. The optional app lock (in QuitKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells QuitKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; QuitKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in QuitKeep's Settings, or switch off Face ID for QuitKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because QuitKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
+  <h3>Get Help resources</h3>
+  <p>The in-app crisis lines are third-party services listed for convenience; calling connects you directly to them, not through QuitKeep.</p>
+  <h3>In-app purchase</h3>
+  <p>QuitKeep Plus is an optional purchase (a yearly subscription or a one-time unlock) handled entirely by Apple's App Store. QuitKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
+  <h3>Children</h3>
+  <p>QuitKeep does not knowingly collect information from anyone, including children.</p>
+  <h3>Contact</h3>
+  <p><a href="mailto:minieriapps+quitkeep@gmail.com">minieriapps+quitkeep@gmail.com</a></p>
+  <p class="soft">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a> · Français : <a href="confidentialite.html">Politique de confidentialité</a></p>
 
-  <p class="muted" style="margin-top:24px">QuitKeep is a personal tracker. It is not a medical device and does not provide medical advice, diagnosis, or treatment. If you drink heavily or daily, talk to a doctor before stopping — alcohol withdrawal can be dangerous.</p>
+  <p class="soft" style="margin-top:40px">QuitKeep is not a medical device and does not provide medical advice, diagnosis, or treatment. If you drink heavily or daily, talk to a doctor before stopping. Alcohol withdrawal can be dangerous.</p>
 
   <footer>© 2026 Nick Minieri · QuitKeep</footer>
-</div>
+</main>
 </body>
 </html>
